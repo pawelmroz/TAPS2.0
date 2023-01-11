@@ -26,7 +26,6 @@ class Tests(unittest.TestCase):
 
     def test2(self):
         click_iframe_tab(self.driver)
-        iframe_content_visible(self.driver)
         self.assertTrue(click_inside_iframe(self.driver))
         self.driver.get_screenshot_as_file('mod6_housework.jpg')
 
